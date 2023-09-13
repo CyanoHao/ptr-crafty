@@ -1,0 +1,5 @@
+## Interface: 100200
+## Title: PTR Crafty Helper
+## Version: 1.0
+
+CraftyHelper.lua

@@ -1,0 +1,48 @@
+glue:
+  copy_character_latency: 5
+  xy_copy_character: {x: 750, y: 1800}
+  xy_do_copy: {x: 1180, y: 1470}
+  xy_do_copy_confirm: {x: 750, y: 1110}
+
+  character_page: 2
+  xy_page_down: {x: 1425, y: 1200}
+  xy_my_character_in_copy_list: {x: 1000, y: 970}
+
+  change_region: yes
+  switch_region_latency: 3
+  xy_select_region_dropdown: {x: 640, y: 630}
+  xy_select_region_my_region: {x: 550, y: 940}
+
+  change_name: yes
+  new_name: 'MyCopyChar'
+  xy_change_name_confirm: {x: 750, y: 1260}
+
+  enter_world_latency: 20
+  xy_my_character: {x: 1500, y: 720}
+  xy_enter_world: {x: 950, y: 1700}
+
+  delete_character_latency: 3
+  xy_delete_character: {x: 1550, y: 1790}
+  xy_confirm_deletion: {x: 750, y: 1180}
+
+world:
+  macro_execution_latency: 0.5
+  send_mail_latency: 1
+  send_action:
+    - to: 'MyVaultOne-Fyrakk'
+      macro: '/click CraftySendRuneButton'
+    - to: 'MyVaultOne-Fyrakk'
+      macro: '/click CraftySendRuneButton'
+    - to: 'MyVaultTwo-Fyrakk'
+      macro:
+        - '/click CraftySendHammerButton'
+        - '/click CraftySendGliderButton'
+      gold: 500000
+  xy_gold_input: {x: 120, y: 900}
+  xy_mailbox: {x: 700, y: 1000}
+  xy_send_mail_tab: {x: 250, y: 1000}
+  xy_send_button: {x: 400, y: 960}
+
+  log_out_latency: 5
+  xy_game_menu: {x: 1890, y: 2050}
+  xy_log_out: {x: 960, y: 1160}
